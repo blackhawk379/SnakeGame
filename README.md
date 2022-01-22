@@ -1,7 +1,7 @@
 ## Snake and Apple Game
-Built first project in pycharm using python pygame module. Dealt wi being smooth
+Built first project in pycharm using python pygame module.
 
-Game is simple:
+**Game is simple:**
 (1) When snake eats an apple it gets longer(depending on the mode selected) and your score increases. 
 (2) If you snake hits any part of its body, or any rock, or in case of wall mode, boundaries of the window, it will die.
 (3) If no wall mode, on going through a wall, snake will get teleported to opposite side wall.
