@@ -7,6 +7,7 @@ Built game project in pycharm using pygame module in python
 (3) If no wall mode, on going through a wall, snake will get teleported to opposite side wall.<br /><br />
 
 *Challenge yourself to establish highest score!!*
+> while enjoying catchy sounds
 
 **Game Preview**
 
