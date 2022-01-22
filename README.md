@@ -10,7 +10,7 @@ Built game project in pycharm using pygame module in python
 > *while enjoying catchy sounds*
 
 **Game Preview**
-> **To be Uploaded soon...
+> To be Uploaded soon...
 
 ### Challenges
 
