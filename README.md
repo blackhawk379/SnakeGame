@@ -6,8 +6,7 @@ Built game project in pycharm using pygame module in python
 (2) If you snake hits any part of its body, or any rock, or in case of wall mode, boundaries of the window, it will die.<br />
 (3) If no wall mode, on going through a wall, snake will get teleported to opposite side wall.<br /><br />
 
-*Challenge yourself to establish highest score!!*
-> *while enjoying catchy sounds*
+*Challenge yourself to establish highest score!!* (while enjoying catchy sounds)
 
 **Game Preview**
 > To be Uploaded soon...
