@@ -26,25 +26,29 @@ class Apple:
         self.x = random.randint(2, 22) * SIZE
         self.y = random.randint(2, 15) * SIZE
 
-
 class Rock:
-    def __init__(self, parent_screen):
+    def __init__(self, parent_screen, mode):
         self.parent_screen = parent_screen
         self.image = pygame.image.load("resources/rock.jpg").convert()
-        self.x = [X_END - 40, X_END - 40, 800]
-        self.y = [Y_END - 40, 0, 600]
+        self.x = []
+        self.y = []
+        self.size = mode * 3
+        for i in range(self.size):
+            self.x.append(random.randint(2, 22) * SIZE)
+            self.y.append(random.randint(2, 15) * SIZE)
 
     def draw(self):
         image = pygame.transform.scale(self.image, (SIZE, SIZE))
-        for i in range(len(self.x)):
+        for i in range(self.size):
             self.parent_screen.blit(image, (self.x[i], self.y[i]))
         pygame.display.flip()
 
     def move(self):
-        self.x.pop(0)
-        self.y.pop(0)
-        self.x.append(random.randint(2, 22) * SIZE)
-        self.y.append(random.randint(2, 15) * SIZE)
+        for i in range(2):
+            self.x.pop(i)
+            self.y.pop(i)
+            self.x.append(random.randint(2, 22) * SIZE)
+            self.y.append(random.randint(2, 15) * SIZE)
 
 
 class Snake:
@@ -191,7 +195,7 @@ class Game:
         self.surface = pygame.display.set_mode((X_END, Y_END))
         self.snake = Snake(self.surface, isWall)
         self.apple = Apple(self.surface)
-        self.rock = Rock(self.surface)
+        self.rock = Rock(self.surface, mode)
         self.surface.blit(pygame.image.load("resources/block1.png").convert(), (40, 40))
         self.apple.draw()
         self.rock.draw()
