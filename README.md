@@ -8,7 +8,7 @@ Built game project in pycharm using pygame module in python
 
 *Challenge yourself to establish highest score!!* (while enjoying catchy sounds)
 
-**Game Preview**<br />
+*Game Preview*<br /><br />
 ![](game_preview.gif)
 
 ### Challenges
